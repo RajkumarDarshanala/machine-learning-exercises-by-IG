@@ -1,0 +1,39 @@
+# It is the weeek-6 assignment which is the implimentation of MNIST dataset digit recognition
+# Here it is implimented by both sklearn's RandomForestClassifier model and NeuralNetwork_Dense model
+
+Note: MSE = mean_square_error
+
+SUMMARY OF THE IMPLIMENTATIONS IS
+======================================================================================================================================
+Random forest
+num_of_estimators=10
+    train_MSE =  0.0029
+    test_MSE =  0.2005
+    
+num_of_estimators = 25
+    train_MSE =  0.00011666666666666667
+    test_MSE =  0.1551
+    
+number of corect test set preditcion using random forest =  9460 for(num_of_estimators = 10) and increased with increase in num_of_estimators
+
+======================================================================================================================================
+======================================================================================================================================
+CNN Dense model
+train_MSE_nn =  0.03191666666666667
+test_MSE_nn =  0.0817
+number of corect test set preditcion using neural network model =  9778 with(a input layer , 2 hidden layers, 1 output layer) and (epoches = 10)
+and increased with numbers of layers and epoches
+=======================================================================================================================================
+
+Here we can observe that in Random forest classifier the MSE of Train set in less than Test set irrespective of number of estimators used
+whereas in Dense model(neural networks) the test set MSE is less than Train set
+
+if the MSE in train set is less than test set then the model may seems to have overfitting even though it is having better results(Note it only seems to)
+where as in Dense model we can see there is no over fitting at all as the Test set error is less than the Train set
+
+And comparing the accuracies we can comment that neural network Dense model worked well
+If we compare the fasteness of the model even to get the same accuracy as of the neural network Dense model the number of estimators should be more and which increses the training time of RandomForestClassifier
+
+So in both ways the neural network Dense model will me the best model for the data set we choosen.
+
+    Thank you
